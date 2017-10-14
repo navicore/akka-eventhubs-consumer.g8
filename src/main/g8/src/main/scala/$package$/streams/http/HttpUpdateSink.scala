@@ -5,7 +5,6 @@ import akka.actor._
 import akka.stream.scaladsl.Sink
 import com.microsoft.azure.reactiveeventhubs.EventHubsMessage
 import com.typesafe.scalalogging.LazyLogging
-import $package$.models.EhEnvelop
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
@@ -23,7 +22,7 @@ object HttpUpdateSink extends LazyLogging {
     implicit val formats: DefaultFormats.type = DefaultFormats
 
     Sink.foreach[EventHubsMessage] { (m: EventHubsMessage) =>
-      val body = parse(m.contentAsString).extract[EhEnvelop].contents.body
+      val body = m.contentAsString
       //todo: match after the parse but before the extract
       body match { //todo: sane matching
         case json if json contains containsPattern =>
