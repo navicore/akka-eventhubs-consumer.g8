@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9ca551a9ebcb4dcf95ae4c9beba2b3f7)](https://www.codacy.com/app/navicore/akka-eventhubs-consumer.g8?utm_source=github.com&utm_medium=referral&utm_content=navicore/akka-eventhubs-consumer.g8&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/navicore/akka-eventhubs-consumer.g8.svg?branch=master)](https://travis-ci.org/navicore/akka-eventhubs-consumer.g8)
 
 A [g8] Template for EventHubs, AKKA Streams, and AKKA HTTP
