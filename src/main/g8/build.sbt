@@ -11,6 +11,7 @@ parallelExecution in test := false
 
 version := "1.0"
 
+ensimeScalaVersion in ThisBuild := "$scalaVersion$"
 scalaVersion := "$scalaVersion$"
 val akkaVersion = "$akkaVersion$"
 val akkaHttpVersion = "$akkaHttpVersion$"
